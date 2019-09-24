@@ -13,7 +13,7 @@ if(isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] === 'delete')
 	include("sql.php");
 	$date = $conn->query("SELECT * FROM `produse` inner join categorie on produse.id_cat = categorie.id_cat");
 	$rows = [];
-	while ( $row = mysqli_fetch_assoc($date) ){var_dump($row)
+	while ( $row = mysqli_fetch_assoc($date) ){
 		?>
 		<tr>
 			<td style="border:1px solid black;"><?= $row['denumire'] ?></td>

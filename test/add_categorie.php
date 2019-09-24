@@ -1,6 +1,6 @@
 <?
-if(!empty($_POST['denumire']) ) {
-	$name = $_POST['denumire'];
+if(!empty($_GET['denumire']) ) {
+	$name = $_GET['denumire'];
 	$result = $conn->query("INSERT INTO `categorie` (denumire) Values('".$name."')");
 	?>
 	Adaugare succes!
